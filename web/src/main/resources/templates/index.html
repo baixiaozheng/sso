@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>Hello World![[${username}]]</h2>
+<a th:href="@{/logout(gotoURL=${#httpServletRequest.getRequestURL() })}">Logout</a>
+</body>
+</html>
